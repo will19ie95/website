@@ -1,0 +1,19 @@
+{
+  "name": "simple-app",
+  "version": "1.0.0",
+  "description": "app for learning ui",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yong Lei",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
