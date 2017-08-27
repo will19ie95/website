@@ -1,0 +1,58 @@
+/* Panels */
+
+.panel.card {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.card-container {
+    padding-left: 0px;
+}
+
+.card .panel-heading {
+    padding: 0px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #336699;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.card .card-heading-left {
+    width: 90%;
+    border: 1px solid #E2E2E2;
+    border-right: 0px;
+    vertical-align: bottom;
+    border-top-left-radius: 5px;
+}
+
+.card .card-heading-left > p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding-left: 30px;
+}
+
+.card .card-heading-right {
+    width: 10%;
+    border: 1px solid #E2E2E2;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 5px;
+}
+
+.card .card-heading-right > span {
+    margin: 0px;
+    padding: 0px;
+    font-size: 28px;
+    color: orange;
+}
+
+.card:hover .card-heading-right > span {
+    color: red;
+}

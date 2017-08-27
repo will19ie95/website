@@ -11,11 +11,17 @@ app.set('view engine', 'ejs');
 // setup static files for access.
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/'));
+app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
 
 // setup basic routing.
 app.get('/', function(req, res) {
     // render ejs file.
     res.render("page/index");
+});
+
+app.get('/details', function (req, res) {
+    // render ejs file.
+    res.render("page/section-details");
 });
 
 // start the app at port.
