@@ -2,6 +2,8 @@ const path      = require("path");
 const express   = require('express');
 const app       = express();
 
+const cardData  = require("./data/card_data.js")
+
 // check for port environment port number, defaults to 4200;
 var port = process.env.port || 4200;
 
@@ -16,7 +18,10 @@ app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
 // setup basic routing.
 app.get('/', function(req, res) {
     // render ejs file.
-    res.render("page/index");
+    res.render("page/index", {
+        cards: cardData
+    });
+
 });
 
 app.get('/details', function (req, res) {

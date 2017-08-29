@@ -7,10 +7,9 @@
 
         <div class="container">
             <div class="row">
-                    <% include ../partial/panel %>
-                    <% include ../partial/panel %>
-                    <% include ../partial/panel %>
-                    <% include ../partial/panel %>
+                    <% cards.forEach(function(card){ %>
+                        <%- include('../partial/card', {card: card}); %>
+                    <% }); %>
             </div>
 
         </div>
