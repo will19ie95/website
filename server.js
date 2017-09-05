@@ -2,10 +2,10 @@ const path      = require("path");
 const express   = require('express');
 const app       = express();
 
-const cardData  = require("./data/card_data.js")
+const course_data  = require("./data/course_data.js")
 
 // check for port environment port number, defaults to 4200;
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 4200;
 
 // set view engine to EJS
 app.set('view engine', 'ejs');
@@ -19,9 +19,8 @@ app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
 app.get('/', function(req, res) {
     // render ejs file.
     res.render("page/index", {
-        cards: cardData
+        courses: course_data
     });
-
 });
 
 app.get('/details', function (req, res) {

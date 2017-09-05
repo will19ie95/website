@@ -1,0 +1,29 @@
+<div class="container-education">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel-group" id="accordion" role="tablist">
+
+
+                    <% courses.forEach(function(course, index) { %>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" id="<%= course.name %>">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#<%= index %>" aria-expanded="false">
+                                        <%= course.name %>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="<%= index %>" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <%= course.desc %>
+                                </div>
+                            </div>
+                        </div>
+                    <% }); %>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

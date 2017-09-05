@@ -1,7 +1,7 @@
 .navbar-nav {
     float: none;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar-nav > li{
@@ -11,4 +11,53 @@
 
 .navbar {
     border-radius: 0px;
+    margin: 0px;
+}
+
+.container-nav {
+    text-align: center;
+}
+
+
+/* HOME */
+.container-home {
+    padding-top: 20px;
+    background: #666;
+    width: 100%;
+}
+
+.home {
+    display: flex;
+    align-items: stretch;
+}
+
+.profile_pic {
+    display: flex;
+    align-items: center;
+}
+
+.profile_pic > img{
+    border-radius: 50%;
+    width: 50%;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+
+.profile_desc {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.profile_desc > p {
+    color: white;
+    margin: 0px;
+}
+
+/* EDUCATION */
+
+.container-education {
+    padding-top: 20px;
+    background: #999;
+    width: 100%;
 }
