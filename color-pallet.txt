@@ -1,2 +1,0 @@
-base orange color: #ffbf51
-hover orange color: #ff6851

@@ -1,0 +1,14 @@
+.navbar-nav {
+    float: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar-nav > li{
+    float: none;
+    display: inline-block;
+}
+
+.navbar {
+    border-radius: 0px;
+}

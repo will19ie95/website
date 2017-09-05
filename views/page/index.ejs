@@ -6,10 +6,18 @@
         <% include ../partial/navbar %>
 
         <div class="container">
+
             <div class="row">
-                    <% cards.forEach(function(card){ %>
-                        <%- include('../partial/card', {card: card}); %>
-                    <% }); %>
+                <div class="col-md-6">
+                    this is span 6 
+                </div>
+                <div class="col-md-3">
+                    span 3
+                </div>
+            </div>
+
+            <div class="row">
+                row
             </div>
 
         </div>
