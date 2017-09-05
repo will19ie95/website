@@ -5,7 +5,7 @@ const app       = express();
 const cardData  = require("./data/card_data.js")
 
 // check for port environment port number, defaults to 4200;
-var port = process.env.port || 4200;
+var port = process.env.port || 8080;
 
 // set view engine to EJS
 app.set('view engine', 'ejs');
