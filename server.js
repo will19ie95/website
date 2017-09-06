@@ -14,6 +14,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/'));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
+app.use('/devicon', express.static(__dirname + '/node_modules/devicon/'));
 
 // setup basic routing.
 app.get('/', function(req, res) {

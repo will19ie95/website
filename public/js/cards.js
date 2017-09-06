@@ -1,10 +1,20 @@
 $(document).ready(function() {
-    // $(".panel").click(function () {
-    //     window.location.href = "/details"
-    // })
+    function scrollToAnchor(aid) {
+        var aTag = $("div[id='" + aid + "']");
+        $('html,body').animate({ scrollTop: aTag.offset().top }, 'slow');
+    }
+
+    $("#goto-home").click(function () {
+        scrollToAnchor('myCarousel');
+    });
+
+    $("#goto-education").click(function () {
+        scrollToAnchor('education');
+    });
+
+    $("#goto-skills").click(function () {
+        scrollToAnchor('skills');
+    });
 
 
-    // $(".back-icon").click(function () {
-    //     window.location.href = "/"
-    // })
 })

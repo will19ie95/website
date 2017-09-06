@@ -12,6 +12,8 @@
 .navbar {
     border-radius: 0px;
     margin: 0px;
+    border: none;
+    background-color: rgba(32, 32, 32, .1);
 }
 
 .container-nav {
@@ -57,7 +59,71 @@
 /* EDUCATION */
 
 .container-education {
+    height: 100vh;
     padding-top: 20px;
     background: #999;
+    width: 100%;
+}
+
+/* carousel */
+
+#myCarousel {
+    height: 100vh;
+    margin-top: 50px;
+}
+
+#myCarousel .item {
+    /* display: flex;
+    align-items: stretch; */
+    height: 100%;
+}
+
+#myCarousel .item .item-left,
+#myCarousel .item .item-right {
+    width: 50%;
+    align-items: center;
+    display: flex;
+}
+
+#myCarousel .item .item-left {
+}
+
+#myCarousel .item .item-right h3 {
+    color: white;
+    margin: auto auto;
+}
+
+#myCarousel .item .item-left > img {
+    height: 45%;
+    margin: 0px;
+    border-radius: 50%;
+    margin: 0px auto;
+}
+
+#item_1_background {
+    background-image: url(../images/matrix.gif);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .8;
+}
+
+#item_1 .box {
+    height: 100%;
+    width: 100%;
+    padding: 0p;
+    padding: 0px;
+    display: flex;
+}
+
+/* SKILLS */
+
+.container-skills {
+    height: 100vh;
+    padding-top: 20px;
+    background: #FFF;
     width: 100%;
 }
