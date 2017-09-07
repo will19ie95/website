@@ -1,28 +1,67 @@
 <div class="container-education" id="education">
+    <img class="education-background" src="../images/note.png"></img>
     <div class="container">
+
         <div class="row">
             <div class="col-xs-12">
-                <div class="panel-group" id="accordion" role="tablist">
-
-                    <% courses.forEach(function(course, index) { %>
-                        <div class="panel panel-default">
-                            <div class="panel-heading" id="<%= course.name %>">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#<%= index %>" aria-expanded="false">
-                                        <%= course.name %>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="<%= index %>" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <%= course.desc %>
-                                </div>
-                            </div>
-                        </div>
-                    <% }); %>
-
+                <div class="jumbotron">
+                    <h1>Education</h1>
                 </div>
             </div>
         </div>
+        <div class="row" style="margin-top:25px">
+            <div class="col-xs-5" style="text-align:center">
+                <img src="../images/sb_logo.png" alt="" height="60px">
+
+                <div class="cs-major">
+                    Computer Science Major
+                </div>
+
+                <div class="cs">
+                    Java
+                </div>
+
+                <div class="cs">
+                    Assembly
+                </div>
+
+                <div class="cs">
+                    C Programming
+                </div>
+
+            </div>
+
+            <div class="col-xs-2"></div>
+
+            <div class="col-xs-5" style="text-align:center">
+                <img src="../images/udemy_logo.svg" alt="" height="60px">
+           
+                <div class="cs-major">
+                    Web Specialization
+                </div>
+
+                <div class="cs">
+                    Node JS
+                </div>
+
+                <div class="cs">
+                    JavaScript
+                </div>
+
+                <div class="cs">
+                    Angular JS
+                </div>
+
+                
+            </div>
+            
+
+        </div>
+
+
     </div>
 </div>
+
+        
+
+        

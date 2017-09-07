@@ -3,6 +3,7 @@
     display: inline-block;
     color: transparent;
     font-size: 25px;
+    margin-left: 15px;
 }
 
 .stars-container:before {
@@ -63,5 +64,5 @@
 }
 
 .stars-100:after {
-    width: 100;
+    width: 100%;
 }

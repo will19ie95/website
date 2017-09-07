@@ -20,7 +20,8 @@ app.use('/devicon', express.static(__dirname + '/node_modules/devicon/'));
 app.get('/', function(req, res) {
     // render ejs file.
     res.render("page/index", {
-        courses: course_data
+        courses: course_data.courses,
+        courses_2: course_data.courses_2
     });
 });
 

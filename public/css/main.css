@@ -7,6 +7,8 @@
 .navbar-nav > li{
     float: none;
     display: inline-block;
+    width: 25%;
+    text-align: center;
 }
 
 .navbar {
@@ -14,6 +16,13 @@
     margin: 0px;
     border: none;
     background-color: rgba(32, 32, 32, .1);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    /* color: #9d9d9d; */
+    color: #336699;
+    font-weight: bold;
+    letter-spacing: 1.5px;
 }
 
 .container-nav {
@@ -61,8 +70,34 @@
 .container-education {
     height: 100vh;
     padding-top: 20px;
-    background: #999;
+    background: transparent;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.education-background {
+    position: absolute;
+    width: 100vw;
+    height: 110vh;
+    top: -69px;
+    opacity: .75;
+}
+
+.cs-major {
+    margin-top: 74px;
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive;
+    font-weight: normal;
+    text-shadow: 1px 1px 0px;
+}
+
+.cs {
+    margin-top: 74px;
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive;
 }
 
 /* carousel */
@@ -121,9 +156,35 @@
 
 /* SKILLS */
 
-.container-skills {
+.container-experience {
     height: 100vh;
     padding-top: 20px;
-    background: #FFF;
+    /* background: #FFF; */
+    background-image: url(../images/board.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
 }
+
+.icon {
+    font-size: 50px;
+    color: rgb(96, 190, 134);
+}
+
+.rating-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.jumbotron {
+    padding: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    text-shadow: 2px -2px 2px;
+    letter-spacing: 5px;
+}
+

@@ -12,8 +12,8 @@ $(document).ready(function() {
         scrollToAnchor('education');
     });
 
-    $("#goto-skills").click(function () {
-        scrollToAnchor('skills');
+    $("#goto-experience").click(function () {
+        scrollToAnchor('experience');
     });
 
 
